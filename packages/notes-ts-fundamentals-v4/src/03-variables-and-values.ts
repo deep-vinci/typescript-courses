@@ -63,3 +63,13 @@ setTimeout(() => {
 /**/
 
 export default {};
+
+// personal
+let x = 1 as const;
+const y = 2;
+
+const status1 = { type: "success" };
+const status2 = { type: "success" } as const;
+
+x = 1;
+y = 2;
