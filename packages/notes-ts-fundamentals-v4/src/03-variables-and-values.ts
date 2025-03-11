@@ -1,9 +1,9 @@
 //* Variable Declarations & Inference
-let temperature = 6; //! inference
+// let temperature = 6; //! inference
 
-// temperature = 'warm'; //! type-checking
-let humidity = 79 as 79; //! literal type
-humidity = 79;
+// // temperature = 'warm'; //! type-checking
+// let humidity = 79 as 79; //! literal type
+// humidity = 79;
 //* A type as a set of allowed values
 // temperature = 23; //✔️ (1)  - re-assignability of a let
 // temperature = humidity; //! (2) - type-checking
@@ -22,15 +22,15 @@ humidity = 79;
 //* Implicit `any` and type annotations
 
 // between 500 and 1000
-export const RANDOM_WAIT_TIME = Math.round(Math.random() * 500) + 500;
+// export const RANDOM_WAIT_TIME = Math.round(Math.random() * 500) + 500;
 
-let startTime = new Date();
-let endTime: Date;
+// let startTime = new Date();
+// let endTime: Date;
 
-setTimeout(() => {
-    // endTime = 0;
-    endTime = new Date();
-}, RANDOM_WAIT_TIME);
+// setTimeout(() => {
+//     // endTime = 0;
+//     endTime = new Date();
+// }, RANDOM_WAIT_TIME);
 
 //* Type Casting
 /*
@@ -62,14 +62,21 @@ setTimeout(() => {
 
 /**/
 
-export default {};
+// export default {};
 
 // personal
-let x = 1 as const;
-const y = 2;
+// let x = 1 as const;
+// const y = 2;
 
-const status1 = { type: "success" };
-const status2 = { type: "success" } as const;
+// const status1 = { type: "success" };
+// const status2 = { type: "success" } as const;
 
-x = 1;
-y = 2;
+// x = 1;
+// y = 2;
+
+function add(a: number, b: number): number | undefined {
+    if ()
+    return a + b;
+}
+
+console.log(add(3, 4));
