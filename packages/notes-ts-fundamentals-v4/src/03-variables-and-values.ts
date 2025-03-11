@@ -74,8 +74,7 @@
 // x = 1;
 // y = 2;
 
-function add(a: number, b: number): number | undefined {
-    if ()
+function add(a: number, b: number): number {
     return a + b;
 }
 
